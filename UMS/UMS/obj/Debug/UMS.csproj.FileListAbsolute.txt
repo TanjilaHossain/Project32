@@ -1,0 +1,41 @@
+E:\Project for isd & sd\UMS\UMS\bin\Debug\UMS.exe.config
+E:\Project for isd & sd\UMS\UMS\bin\Debug\UMS.exe
+E:\Project for isd & sd\UMS\UMS\bin\Debug\UMS.pdb
+E:\Project for isd & sd\UMS\UMS\bin\Debug\MaterialSkin.dll
+E:\Project for isd & sd\UMS\UMS\obj\Debug\UMS.Properties.Resources.resources
+E:\Project for isd & sd\UMS\UMS\obj\Debug\UMS.csproj.GenerateResource.Cache
+E:\Project for isd & sd\UMS\UMS\obj\Debug\UMS.exe
+E:\Project for isd & sd\UMS\UMS\obj\Debug\UMS.pdb
+E:\Project for isd & sd\UMS\UMS\obj\Debug\UMS.LogIn.resources
+E:\Project for isd & sd\UMS\UMS\obj\Debug\UMS.Category.resources
+E:\Project for isd & sd\UMS\UMS\obj\Debug\UMS.StudentRegistration.resources
+E:\Project for isd & sd\UMS\UMS\obj\Debug\UMS.csprojResolveAssemblyReference.cache
+E:\Project for isd & sd\UMS\UMS\obj\Debug\UMS.AdminRegistration.resources
+E:\Project for isd & sd\UMS\UMS\obj\Debug\UMS.Admin_Portion.resources
+E:\Project for isd & sd\UMS\UMS\obj\Debug\UMS.EditAdmin.resources
+E:\Project for isd & sd\UMS\UMS\obj\Debug\UMS.Student_Profile.resources
+C:\Users\Sajid\Downloads\Compressed\UMS\UMS\obj\Debug\UMS.csprojResolveAssemblyReference.cache
+C:\Users\Sajid\Downloads\Compressed\UMS\UMS\obj\Debug\UMS.AdminRegistration.resources
+C:\Users\Sajid\Downloads\Compressed\UMS\UMS\obj\Debug\UMS.Admin_Portion.resources
+C:\Users\Sajid\Downloads\Compressed\UMS\UMS\obj\Debug\UMS.Category.resources
+C:\Users\Sajid\Downloads\Compressed\UMS\UMS\obj\Debug\UMS.EditAdmin.resources
+C:\Users\Sajid\Downloads\Compressed\UMS\UMS\obj\Debug\UMS.LogIn.resources
+C:\Users\Sajid\Downloads\Compressed\UMS\UMS\obj\Debug\UMS.Properties.Resources.resources
+C:\Users\Sajid\Downloads\Compressed\UMS\UMS\obj\Debug\UMS.Student_Profile.resources
+C:\Users\Sajid\Downloads\Compressed\UMS\UMS\obj\Debug\UMS.StudentRegistration.resources
+C:\Users\Sajid\Downloads\Compressed\UMS\UMS\obj\Debug\UMS.csproj.GenerateResource.Cache
+C:\Users\Sajid\Downloads\Compressed\UMS\UMS\obj\Debug\UMS.exe
+C:\Users\Sajid\Downloads\Compressed\UMS\UMS\obj\Debug\UMS.pdb
+C:\Users\Sajid\Downloads\Compressed\UMS\UMS\bin\Debug\UMS.exe.config
+C:\Users\Sajid\Downloads\Compressed\UMS\UMS\bin\Debug\UMS.exe
+C:\Users\Sajid\Downloads\Compressed\UMS\UMS\bin\Debug\UMS.pdb
+C:\Users\Sajid\Downloads\Compressed\UMS\UMS\bin\Debug\MaterialSkin.dll
+C:\Users\Sajid\Downloads\Compressed\UMS\UMS\obj\Debug\UMS.LibrarianRegistration.resources
+C:\Users\Sajid\Downloads\Compressed\UMS\UMS\obj\Debug\UMS.Librarian_portion.resources
+C:\Users\Sajid\Downloads\Compressed\UMS\UMS\obj\Debug\UMS.Issue_books.resources
+C:\Users\Sajid\Downloads\Compressed\UMS\UMS\bin\Debug\Ionic.Zlib.dll
+C:\Users\Sajid\Downloads\Compressed\UMS\UMS\obj\Debug\UMS.TeacherRegistration.resources
+C:\Users\Sajid\Downloads\Compressed\UMS\UMS\obj\Debug\UMS.TeacherProfile.resources
+C:\Users\Sajid\Downloads\Compressed\UMS\UMS\bin\Debug\Excel.4.5.dll
+C:\Users\Sajid\Downloads\Compressed\UMS\UMS\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\Sajid\Downloads\Compressed\UMS\UMS\bin\Debug\Excel.4.5.pdb

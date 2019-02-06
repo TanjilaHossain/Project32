@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5958A0DF-EAC7-440D-9539-866278B1084F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>UMS</RootNamespace>
+    <AssemblyName>UMS</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Excel.4.5">
+      <HintPath>E:\Project for isd &amp; sd\output\net45\Excel.4.5.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zlib, Version=1.9.1.5, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ionic.Zlib.1.9.1.5\lib\Ionic.Zlib.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminDAO.cs" />
+    <Compile Include="adminDTO.cs" />
+    <Compile Include="AdminRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminRegistration.Designer.cs">
+      <DependentUpon>AdminRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Portion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Portion.Designer.cs">
+      <DependentUpon>Admin_Portion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlumniRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlumniRegistration.Designer.cs">
+      <DependentUpon>AlumniRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bookDAO.cs" />
+    <Compile Include="bookDTO.cs" />
+    <Compile Include="Category.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Category.Designer.cs">
+      <DependentUpon>Category.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataClasses1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="EditAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditAdmin.Designer.cs">
+      <DependentUpon>EditAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_student_ProfileDAO.cs" />
+    <Compile Include="Edit_Student_ProfileDTO.cs" />
+    <Compile Include="Issue_books.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Issue_books.Designer.cs">
+      <DependentUpon>Issue_books.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LibrarianDAO.cs" />
+    <Compile Include="LibrarianDTO.cs" />
+    <Compile Include="LibrarianRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LibrarianRegistration.Designer.cs">
+      <DependentUpon>LibrarianRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Librarian_portion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Librarian_portion.Designer.cs">
+      <DependentUpon>Librarian_portion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Library_manageDAO.cs" />
+    <Compile Include="Library_manageDTO.cs" />
+    <Compile Include="LogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogIn.Designer.cs">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Student Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student Profile.Designer.cs">
+      <DependentUpon>Student Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentDAO.cs" />
+    <Compile Include="StudentRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentRegistration.Designer.cs">
+      <DependentUpon>StudentRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherDAO.cs" />
+    <Compile Include="TeacherDTO.cs" />
+    <Compile Include="TeacherProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherProfile.Designer.cs">
+      <DependentUpon>TeacherProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherRegistration.Designer.cs">
+      <DependentUpon>TeacherRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UMSDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UMSDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UMSDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UMSDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UMSDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UMSDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UMSDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UMSDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UMSDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UMSDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UMSDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UMSDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UMSDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UMSDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UMSDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UMSDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UMSDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UMSDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UMSDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UMSDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UMSDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UMSDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UMSDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UMSDataSet9.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminRegistration.resx">
+      <DependentUpon>AdminRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Portion.resx">
+      <DependentUpon>Admin_Portion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Category.resx">
+      <DependentUpon>Category.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataClasses1.dbml.layout">
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="EditAdmin.resx">
+      <DependentUpon>EditAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Issue_books.resx">
+      <DependentUpon>Issue_books.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LibrarianRegistration.resx">
+      <DependentUpon>LibrarianRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Librarian_portion.resx">
+      <DependentUpon>Librarian_portion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogIn.resx">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Student Profile.resx">
+      <DependentUpon>Student Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentRegistration.resx">
+      <DependentUpon>StudentRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherProfile.resx">
+      <DependentUpon>TeacherProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherRegistration.resx">
+      <DependentUpon>TeacherRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataClasses1.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DataClasses1.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="UMSDataSet.xsc">
+      <DependentUpon>UMSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UMSDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UMSDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UMSDataSet.xss">
+      <DependentUpon>UMSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UMSDataSet1.xsc">
+      <DependentUpon>UMSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="UMSDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UMSDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UMSDataSet1.xss">
+      <DependentUpon>UMSDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="UMSDataSet10.xsc">
+      <DependentUpon>UMSDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="UMSDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UMSDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UMSDataSet10.xss">
+      <DependentUpon>UMSDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="UMSDataSet11.xsc">
+      <DependentUpon>UMSDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="UMSDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UMSDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UMSDataSet11.xss">
+      <DependentUpon>UMSDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="UMSDataSet2.xsc">
+      <DependentUpon>UMSDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="UMSDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UMSDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UMSDataSet2.xss">
+      <DependentUpon>UMSDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="UMSDataSet3.xsc">
+      <DependentUpon>UMSDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="UMSDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UMSDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UMSDataSet3.xss">
+      <DependentUpon>UMSDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="UMSDataSet4.xsc">
+      <DependentUpon>UMSDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="UMSDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UMSDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UMSDataSet4.xss">
+      <DependentUpon>UMSDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="UMSDataSet5.xsc">
+      <DependentUpon>UMSDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="UMSDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UMSDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UMSDataSet5.xss">
+      <DependentUpon>UMSDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="UMSDataSet6.xsc">
+      <DependentUpon>UMSDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="UMSDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UMSDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UMSDataSet6.xss">
+      <DependentUpon>UMSDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="UMSDataSet7.xsc">
+      <DependentUpon>UMSDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="UMSDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UMSDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UMSDataSet7.xss">
+      <DependentUpon>UMSDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="UMSDataSet8.xsc">
+      <DependentUpon>UMSDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="UMSDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UMSDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UMSDataSet8.xss">
+      <DependentUpon>UMSDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="UMSDataSet9.xsc">
+      <DependentUpon>UMSDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="UMSDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UMSDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UMSDataSet9.xss">
+      <DependentUpon>UMSDataSet9.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

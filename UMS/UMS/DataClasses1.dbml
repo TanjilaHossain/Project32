@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="UMS" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=SAJID-THINKPAD\SQLEXPRESS;Initial Catalog=UMS;Integrated Security=True" SettingsObjectName="UMS.Properties.Settings" SettingsPropertyName="UMSConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.marks_tbl" Member="marks_tbls">
+    <Type Name="marks_tbl">
+      <Column Name="student_id" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="quiz" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="class_performance" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="final" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="total" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="grade" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
